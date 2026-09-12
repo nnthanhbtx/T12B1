@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#020024" />
+    <meta name="description" content="Trò chơi trí tuệ Ai Là Triệu Phú môn Toán 12 theo chương trình Kết Nối Tri Thức." />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="TrieuPhuT12" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <title>Ai Là Triệu Phú - Toán Học 12 (KNTT)</title>
+    <script>
+      // Defensive safeguard against scripts trying to mutate window.fetch
+      try {
+        if (typeof window !== 'undefined') {
+          const originalFetch = window.fetch ? window.fetch.bind(window) : (typeof fetch !== 'undefined' ? fetch : undefined);
+          try {
+            window.fetch = originalFetch;
+          } catch (_) {
+            // Read-only getter environment: define property if configurable
+            try {
+              Object.defineProperty(window, 'fetch', {
+                value: originalFetch,
+                writable: true,
+                configurable: true
+              });
+            } catch (__) {}
+          }
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body class="bg-[#020024] text-white antialiased selection:bg-yellow-500 selection:text-black">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="60%" stop-color="#090979" />
+      <stop offset="100%" stop-color="#020024" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="35%" stop-color="#eab308" />
+      <stop offset="70%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#854d0e" />
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="100" fill="url(#bgGrad)" />
+
+  <!-- Outer Ring with Tech Nodes -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="url(#ringGrad)" stroke-width="8" opacity="0.8" />
+  <circle cx="256" cy="256" r="195" fill="none" stroke="#eab308" stroke-width="3" stroke-dasharray="10 8" opacity="0.6" />
+
+  <!-- Radiating Starburst Spikes -->
+  <g opacity="0.4" stroke="#eab308" stroke-width="2">
+    <line x1="256" y1="46" x2="256" y2="76" />
+    <line x1="256" y1="436" x2="256" y2="466" />
+    <line x1="46" y1="256" x2="76" y2="256" />
+    <line x1="436" y1="256" x2="466" y2="256" />
+    <line x1="108" y1="108" x2="130" y2="130" />
+    <line x1="382" y1="382" x2="404" y2="404" />
+    <line x1="108" y1="404" x2="130" y2="382" />
+    <line x1="382" y1="130" x2="404" y2="108" />
+  </g>
+
+  <!-- Center Gold Medallion -->
+  <circle cx="256" cy="256" r="150" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="12" filter="url(#glow)" />
+  <circle cx="256" cy="256" r="130" fill="none" stroke="#3b82f6" stroke-width="4" opacity="0.7" />
+
+  <!-- Mathematics + Millionaire Symbol -->
+  <!-- Bold Question / Dollar Stylized Logo -->
+  <text x="256" y="235" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="110" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="-2">12</text>
+  <text x="256" y="325" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="34" fill="#60a5fa" text-anchor="middle" letter-spacing="3">TOÁN KNTT</text>
+  
+  <!-- Subtle Math Symbols in Orbit -->
+  <text x="175" y="165" font-family="serif" font-style="italic" font-weight="bold" font-size="28" fill="#eab308" opacity="0.8">f'(x)</text>
+  <text x="315" y="165" font-family="serif" font-style="italic" font-weight="bold" font-size="28" fill="#eab308" opacity="0.8">∫dx</text>
+  <text x="256" y="380" font-family="system-ui, sans-serif" font-weight="bold" font-size="22" fill="#fbbf24">★ ★ ★</text>
+</svg>

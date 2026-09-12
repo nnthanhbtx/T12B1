@@ -1,0 +1,8 @@
+{
+  "name": "Ai là triệu phú Toán 12 -bài 1",
+  "description": "Tính đơn điệu và cực trị của hàm số",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
